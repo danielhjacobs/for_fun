@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: gray;
+}
+.us_flag {
+	--flag-white: white;
+    --flag-red: red;
+    --flag-blue: darkblue;
+    --width: 500px;
+    --height: calc(var(--width) * 0.04);
+    --font-size: calc(var(--width) * 0.028);
+    width: var(--width);
+    height: var(--height);
+    background: var(--flag-red);
+    box-shadow: 0 var(--height) 0 var(--flag-white),
+    			0 calc(var(--height) * 2) 0 var(--flag-red),
+                0 calc(var(--height) * 3) 0 var(--flag-white),
+                0 calc(var(--height) * 4) 0 var(--flag-red),
+                0 calc(var(--height) * 5) 0 var(--flag-white),
+                0 calc(var(--height) * 6) 0 var(--flag-red),
+                0 calc(var(--height) * 7) 0 var(--flag-white),
+                0 calc(var(--height) * 8) 0 var(--flag-red),
+                0 calc(var(--height) * 9) 0 var(--flag-white),
+                0 calc(var(--height) * 10) 0 var(--flag-red),
+                0 calc(var(--height) * 11) 0 var(--flag-white),
+                0 calc(var(--height) * 12) 0 var(--flag-red);
+}
+.us_flag:before {
+	content: "";
+    background: var(--flag-blue);
+    width: calc(var(--width) * 0.4);
+	height: calc(var(--height) * 7);
+    position: absolute;
+}
+.us_flag:after {
+	content: "★";
+    font-size: var(--font-size);
+    color: var(--flag-white);
+    position: absolute;
+    margin: calc(var(--width) * 0.01);
+    text-shadow: calc(var(--width) * 0.07) 0 0 var(--flag-white),
+                 calc(var(--width) * 0.14) 0 0 var(--flag-white),
+                 calc(var(--width) * 0.21) 0 0 var(--flag-white),
+                 calc(var(--width) * 0.28) 0 0 var(--flag-white),
+                 calc(var(--width) * 0.35) 0 0 var(--flag-white),
+                 calc(var(--height) * 0.85) var(--font-size) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.07) var(--font-size) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.14) var(--font-size) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.21) var(--font-size) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.28) var(--font-size) 0 var(--flag-white),
+                 0 calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--width) * 0.07) calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--width) * 0.14) calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--width) * 0.21) calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--width) * 0.28) calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--width) * 0.35) calc(var(--font-size) * 2) 0 var(--flag-white),
+                 calc(var(--height) * 0.85) calc(var(--font-size) * 3) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.07) calc(var(--font-size) * 3) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.14) calc(var(--font-size) * 3) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.21) calc(var(--font-size) * 3) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.28) calc(var(--font-size) * 3) 0 var(--flag-white),
+                 0 calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--width) * 0.07) calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--width) * 0.14) calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--width) * 0.21) calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--width) * 0.28) calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--width) * 0.35) calc(var(--font-size) * 4) 0 var(--flag-white),
+                 calc(var(--height) * 0.85) calc(var(--font-size) * 5) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.07) calc(var(--font-size) * 5) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.14) calc(var(--font-size) * 5) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.21) calc(var(--font-size) * 5) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.28) calc(var(--font-size) * 5) 0 var(--flag-white),
+                 0 calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--width) * 0.07) calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--width) * 0.14) calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--width) * 0.21) calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--width) * 0.28) calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--width) * 0.35) calc(var(--font-size) * 6) 0 var(--flag-white),
+                 calc(var(--height) * 0.85) calc(var(--font-size) * 7) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.07) calc(var(--font-size) * 7) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.14) calc(var(--font-size) * 7) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.21) calc(var(--font-size) * 7) 0 var(--flag-white),
+                 calc(var(--height) * 0.85 + var(--width) * 0.28) calc(var(--font-size) * 7) 0 var(--flag-white),
+                 0 calc(var(--font-size) * 8) 0 var(--flag-white),
+                 calc(var(--width) * 0.07) calc(var(--font-size) * 8) 0 var(--flag-white),
+                 calc(var(--width) * 0.14) calc(var(--font-size) * 8) 0 var(--flag-white),
+                 calc(var(--width) * 0.21) calc(var(--font-size) * 8) 0 var(--flag-white),
+                 calc(var(--width) * 0.28) calc(var(--font-size) * 8) 0 var(--flag-white),
+                 calc(var(--width) * 0.35) calc(var(--font-size) * 8) 0 var(--flag-white);
+    
+}
+</style>
+<title>US Flag</title>
+</head>
+<body>
+<div class="us_flag"></div>
+</body>
+</html>
