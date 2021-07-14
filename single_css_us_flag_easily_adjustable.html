@@ -6,7 +6,7 @@ body {
   background-color: gray;
 }
 .us_flag {
-	--flag-white: white;
+    --flag-white: white;
     --flag-red: red;
     --flag-blue: darkblue;
     --width: 500px;
@@ -16,7 +16,7 @@ body {
     height: var(--height);
     background: var(--flag-red);
     box-shadow: 0 var(--height) 0 var(--flag-white),
-    			0 calc(var(--height) * 2) 0 var(--flag-red),
+    		0 calc(var(--height) * 2) 0 var(--flag-red),
                 0 calc(var(--height) * 3) 0 var(--flag-white),
                 0 calc(var(--height) * 4) 0 var(--flag-red),
                 0 calc(var(--height) * 5) 0 var(--flag-white),
@@ -29,14 +29,14 @@ body {
                 0 calc(var(--height) * 12) 0 var(--flag-red);
 }
 .us_flag:before {
-	content: "";
+    content: "";
     background: var(--flag-blue);
     width: calc(var(--width) * 0.4);
-	height: calc(var(--height) * 7);
+    height: calc(var(--height) * 7);
     position: absolute;
 }
 .us_flag:after {
-	content: "★";
+    content: "★";
     font-size: var(--font-size);
     color: var(--flag-white);
     position: absolute;
@@ -90,7 +90,6 @@ body {
                  calc(var(--width) * 0.21) calc(var(--font-size) * 8) 0 var(--flag-white),
                  calc(var(--width) * 0.28) calc(var(--font-size) * 8) 0 var(--flag-white),
                  calc(var(--width) * 0.35) calc(var(--font-size) * 8) 0 var(--flag-white);
-    
 }
 </style>
 <title>US Flag</title>
