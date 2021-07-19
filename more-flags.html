@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: gray;
+}
+.fr_flag {
+    --flag-white: white;
+    --flag-red: red;
+    --flag-blue: darkblue;
+    --width: 500px;
+    --height: calc(var(--width) * 0.6);
+    background: -webkit-linear-gradient(to right, var(--flag-blue) 33.33%, var(--flag-white) 33.33% 66.66%, var(--flag-red) 66.66%);
+    background: -moz-linear-gradient(to right, var(--flag-blue) 33.33%, var(--flag-white) 33.33% 66.66%, var(--flag-red) 66.66%);
+    background: -ms-linear-gradient(to right, var(--flag-blue) 33.33%, var(--flag-white) 33.33% 66.66%, var(--flag-red) 66.66%);
+    background: linear-gradient(to right, var(--flag-blue) 33.33%, var(--flag-white) 33.33% 66.66%, var(--flag-red) 66.66%);
+    width: var(--width);
+    height: var(--height);
+}
+.cl_flag {
+    --flag-white: white;
+    --flag-red: red;
+    --flag-blue: darkblue;
+    --width: 500px;
+    --height: calc(var(--width) * 0.6);
+    background: -webkit-linear-gradient(to bottom, var(--flag-white) 50%, var(--flag-red) 50%);
+    background: -moz-linear-gradient(to bottom, var(--flag-white) 50%, var(--flag-red) 50%);
+    background: -ms-linear-gradient(to bottom, var(--flag-white) 50%, var(--flag-red) 50%);
+    background: linear-gradient(to bottom, var(--flag-white) 50%, var(--flag-red) 50%);
+    width: var(--width);
+    height: var(--height);
+}
+.cl_flag:before {
+    content: "";
+    background: var(--flag-blue);
+    width: calc(var(--height) * 0.5);
+    height: calc(var(--height) * 0.5);
+    position: absolute;
+}
+.cl_flag:after {
+    --font-size: calc(var(--width) * 0.216);
+    content: "★";
+    font-size: var(--font-size);
+    color: var(--flag-white);
+    position: absolute;
+    margin: calc(var(--height) * 0.02) calc(var(--height) * 0.1);
+</style>
+</head>
+<body>
+<div class="fr_flag"></div>
+<br>
+<div class="cl_flag"></div>
+</body>
+</html>
